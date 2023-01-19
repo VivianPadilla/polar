@@ -27,49 +27,58 @@
       <aside>
         <div class="logo">
           <h2>POLAR</h2>
-          <img src="assets/oso-polar.png" alt="Logo POLAR" width="30%" />
-          <h4>Daniela Estrada</h4>
+          <img src="assets/oso.png" alt="Logo POLAR" width="30%" />
+          <h5>Daniela Estrada</h5>
         </div>
         <div class="nav-bar">
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">
-                <i class="fa-regular fa-credit-card"></i>
-                <span>Tarjetas</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="spend.html">
-                <i class="fa-solid fa-money-bill-trend-up"></i>
-                <span>Gastos</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="statistics.html">
-                <i class="fa-solid fa-chart-pie"></i>
-                <span>Estadisticas</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="invest.html">
-                <i class="fa-solid fa-chart-line"></i>
-                <span>Invertir</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">
-                <i class="fa-regular fa-envelope"></i>
-                <span>Contacto</span>
-              </a>
-            </li>
-          </ul>
+          <nav>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="index.html"
+                >
+                  <i class="fa-regular fa-credit-card"></i>
+                  <span>Tarjetas</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="spend.html">
+                  <i class="fa-solid fa-money-bill-trend-up"></i>
+                  <span>Gastos</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="statistics.html">
+                  <i class="fa-solid fa-chart-pie"></i>
+                  <span>Estadisticas</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="invest.html">
+                  <i class="fa-solid fa-chart-line"></i>
+                  <span>Invertir</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">
+                  <i class="fa-regular fa-envelope"></i>
+                  <span>Contacto</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </aside>
+
       <!-- right -->
       <section>
         <div class="section-title">
           <h1>Tarjetas</h1>
         </div>
+
+        <!-- Total -->
         <div class="card">
           <div class="card-header">
             <h4>Total</h4>
@@ -78,8 +87,75 @@
             <h3>$300.000.000</h3>
           </div>
         </div>
+
+        <div class="container">
+          <!-- Tarjetas -->
+          <div class="card tipeCard">
+            <div class="card-header">
+              <h4>Tarjetas</h4>
+            </div>
+            <div class="card-body">
+              <div class="tab-bar">
+                <button class="tab-bar item" onclick="openCard('credito')">
+                  Credito
+                </button>
+                <button class="tab-bar item" onclick="openCard('debito')">
+                  Debito
+                </button>
+              </div>
+              <div id="credito" class="cardTab">
+                <div class="card-container">
+                  <p>Banco xxxxxxx</p>
+                  <p>$200.000</p>
+                </div>
+                <div class="card-container">
+                  <p>Banco xxxxxxx</p>
+                  <p>$300.000</p>
+                </div>
+              </div>
+              <div id="debito" class="cardTab" style="display: none">
+                <div class="card-container">
+                  <p>Banco xxxxxxx</p>
+                  <p>$2.000.000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bancos -->
+          <div class="card">
+            <div class="card-header">
+              <h4>Bancos</h4>
+            </div>
+            <div class="card-body">
+              <div class="card-container">
+                <p>Banco xxxxxxx</p>
+                <p>$200.000</p>
+              </div>
+              <div class="card-container">
+                <p>Banco xxxxxxx</p>
+                <p>$300.000</p>
+              </div>
+              <div class="card-container">
+                <p>Banco xxxxxxx</p>
+                <p>$2.000.000</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>© Copyright 2023, All Rights Reserved</footer>
+    <!-- Script -->
+    <script>
+      function openCard(cardName) {
+        var i;
+        var x = document.getElementsByClassName("cardTab");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        document.getElementById(cardName).style.display = "block";
+      }
+    </script>
   </body>
 </html>
