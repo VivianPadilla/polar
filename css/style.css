@@ -1,0 +1,32 @@
+/******** Contenedores principales ********/
+main{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+aside{
+    background-color: #F3E0F7;
+    text-align: center;
+}
+section{
+    padding: 26px;
+    background: #F5F5F1;
+
+}
+/******** Tarjetas ********/
+.logo{
+    margin: 34px 0px 100px 0px;
+}
+.card{
+    background-color: #ffffff;
+    width: 300px;
+}
+.card-header{
+   text-align: center;
+}
+.card-body h3{
+    text-align: center;
+}
+.section-title{
+    margin-bottom: 80px;
+
+}
