@@ -3,6 +3,17 @@ main{
     display: grid;
     grid-template-columns: 1fr 3fr;
 }
+header{
+    background-color: #F5F5F1;
+    color: #F3DFF7;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+header .polar{
+    background-color: #563A87;
+    padding-top: 15px;
+    text-align: center;
+}
 aside{
     background-color: #563A87;
     text-align: center;
@@ -14,9 +25,24 @@ section{
     background: #F5F5F1;
 
 }
+.section-title{
+    margin-bottom: 60px;
+}
 /******** Tarjetas ********/
 h1,h4{
     color: #563A87;
+}
+.bar{
+    padding-top: 15px;
+}
+.social-media ul{
+    list-style: none;
+    display: flex;
+    color: #563A87;
+    margin: 0px;
+}
+.social-media li{
+    margin-right: 25px;
 }
 .nav-link{
     color: #F3DFF7;
@@ -39,6 +65,9 @@ h1,h4{
     background-color: #ffffff;
     width: 300px;
     margin-bottom: 35px;
+    -webkit-box-shadow: 3px 7px 24px -13px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 7px 24px -13px rgba(0,0,0,0.75);
+    box-shadow: 3px 7px 24px -13px rgba(0,0,0,0.75);
 }
 .card-header{
    text-align: center;
@@ -46,10 +75,6 @@ h1,h4{
 }
 .card-body h3{
     text-align: center;
-}
-.section-title{
-    margin-bottom: 80px;
-
 }
 .card.tipeCard{
     width: 95%;
@@ -70,6 +95,56 @@ h1,h4{
 .card-container{
     display: flex;
     justify-content: space-around;
+}
+/******** Contact ********/
+.contact-info{
+    display: flex;
+    justify-content: space-around;
+}
+.info{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+form{
+    margin-left: 50px;
+}
+input,textarea{
+    border-radius: 5px;
+    border: solid 1px grey;
+}
+input[type=submit]{
+    background-color: #563A87;
+    width: 150px;
+    color: #F3DFF7;
+    border: none;
+    margin: auto;
+}
+input[type=submit]:hover{
+    color: #563A87;
+    background-color: #F3DFF7;
+}
+label{
+    font-weight: 500;
+}
+.contact-form.right{
+    display: flex;
+}
+.contact-form.right div{
+    margin-right: 50px;
+}
+.contact-info-left{
+    margin-left: 50px;
+}
+.card-contact{
+    width: 100%;
+    padding: 50px;background-color: #ffffff;
+    margin-bottom: 35px;
+    -webkit-box-shadow: 3px 7px 24px -13px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 7px 24px -13px rgba(0,0,0,0.75);
+    box-shadow: 3px 7px 24px -13px rgba(0,0,0,0.75);
+}
+.contact-title{
+    font-weight: 500;
 }
 /********* Footer *******/
 footer {
