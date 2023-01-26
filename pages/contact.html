@@ -15,7 +15,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
     <link rel="icon" type="image/x-icon" href="assets/oso.png" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>POLAR</title>
   </head>
 
@@ -26,6 +26,12 @@
         <h2>POLAR</h2>
       </div>
       <div class="bar">
+        <div class="search">
+          <input type="search" placeholder="Buscar" />
+          <div class="icon-search">
+            <button><i class="fas fa-search"></i></button>
+          </div>
+        </div>
         <div class="social-media">
           <ul>
             <li><i class="fa-brands fa-facebook"></i></li>
@@ -35,6 +41,9 @@
             <li><i class="fa-brands fa-tiktok"></i></li>
           </ul>
         </div>
+        <div class="icon">
+          <button><i class="fa-solid fa-bell"></i></button>
+        </div>
       </div>
     </header>
 
@@ -42,14 +51,20 @@
       <!-- left -->
       <aside>
         <div class="logo">
-          <img src="assets/oso.png" alt="Logo POLAR" width="30%" />
+          <img src="../assets/oso.png" alt="Logo POLAR" width="30%" />
           <h5>Daniela Estrada</h5>
         </div>
         <div class="nav-bar">
           <nav>
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="../index.html">
+                  <i class="fa-solid fa-house"></i>
+                  <span>Inicio</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="card.html">
                   <i class="fa-regular fa-credit-card"></i>
                   <span>Tarjetas</span>
                 </a>
@@ -86,7 +101,45 @@
       <!-- right -->
       <section>
         <div class="section-title">
-          <h1>Estadisticas</h1>
+          <h1>Contacto</h1>
+        </div>
+        <div class="card-contact">
+          <div class="contact-info">
+            <div class="contact-info-left">
+              <div class="info">
+                <p class="contact-title">Telefono:</p>
+                <p>+57 000 000 0000</p>
+              </div>
+              <div class="info">
+                <p class="contact-title">Email:</p>
+                <p>contacto@polar.com.co</p>
+              </div>
+              <div class="info">
+                <p class="contact-title">Dirección:</p>
+                <p>calle X # X - X</p>
+              </div>
+            </div>
+
+            <div class="contact-form">
+              <form action="">
+                <div class="contact-form right">
+                  <div>
+                    <label for="">Nombre:</label><br />
+                    <input id="" type="text" name="name" />
+                  </div>
+                  <div>
+                    <label for=""> Correo: </label><br />
+                    <input type="email" />
+                  </div>
+                </div>
+                <div>
+                  <label for="">Mensaje</label><br />
+                  <textarea name="" id="" cols="55" rows="10"></textarea><br />
+                </div>
+                <input type="submit" value="Save" />
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>

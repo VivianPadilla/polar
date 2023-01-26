@@ -15,9 +15,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
     <link rel="icon" type="image/x-icon" href="assets/oso.png" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Home</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>POLAR</title>
   </head>
+
   <body>
     <!-- Header -->
     <header>
@@ -46,52 +47,48 @@
       </div>
     </header>
 
-    <!-- Menu -->
-    <div class="contenedor">
+    <main>
+      <!-- left -->
       <aside>
         <div class="logo">
-          <img src="assets/oso.png" alt="Logo POLAR" width="30%" />
+          <img src="../assets/oso.png" alt="Logo POLAR" width="30%" />
           <h5>Daniela Estrada</h5>
         </div>
         <div class="nav-bar">
           <nav>
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="../index.html">
                   <i class="fa-solid fa-house"></i>
                   <span>Inicio</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="pages/card.html"
-                >
+                <a class="nav-link active" aria-current="page" href="card.html">
                   <i class="fa-regular fa-credit-card"></i>
                   <span>Tarjetas</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="pages/spend.html">
+                <a class="nav-link" href="spend.html">
                   <i class="fa-solid fa-money-bill-trend-up"></i>
                   <span>Gastos</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="pages/statistics.html">
+                <a class="nav-link" href="statistics.html">
                   <i class="fa-solid fa-chart-pie"></i>
                   <span>Estadisticas</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="pages/invest.html">
+                <a class="nav-link" href="invest.html">
                   <i class="fa-solid fa-chart-line"></i>
                   <span>Invertir</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="pages/contact.html">
+                <a class="nav-link" href="contact.html">
                   <i class="fa-regular fa-envelope"></i>
                   <span>Contacto</span>
                 </a>
@@ -101,87 +98,90 @@
         </div>
       </aside>
 
-      <!-- Dashboard -->
+      <!-- right -->
       <section>
         <div class="section-title">
-          <h1>Inicio</h1>
+          <h1>Tarjetas</h1>
         </div>
-        <!-- Disponible-->
-        <div class="row">
-          <div class="col-8">
-            <div class="card full">
-              <h5 class="card-header">Disponible</h5>
-              <div class="card-body">
-                <h2 class="card-title text-muted">$3.000.000</h2>
-              </div>
-            </div>
+
+        <!-- Total -->
+        <div class="card">
+          <div class="card-header">
+            <h5>Total</h5>
           </div>
-          <!-- Topes-->
-          <div class="col-4">
-            <div class="card full">
-              <h5 class="card-header">Topes</h5>
-              <div class="card-body">
-                <div class="card-seccion">
-                  <h6>Tu saldo máximo</h6>
-                  <p>$13.000.000</p>
-                </div>
-                <div class="card-seccion">
-                  <h6>Tu saldo actual</h6>
-                  <p>$3.000.000</p>
-                </div>
-                <div
-                  class="progress"
-                  role="progressbar"
-                  aria-label="Info example"
-                  aria-valuenow="50"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  <div class="progress-bar bg-info" style="width: 50%"></div>
-                </div>
-              </div>
-              <div class="card-footer">
-                <h6 class="card-title text-muted">
-                  Puedes usar cada mes libre de GMF $2.000.000
-                </h6>
-                <div class="card-seccion">
-                  <h6>Este mes has usado</h6>
-                  <p>$4.000.000</p>
-                </div>
-                <div
-                  class="progress"
-                  role="progressbar"
-                  aria-label="Warning example"
-                  aria-valuenow="75"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  <div class="progress-bar bg-warning" style="width: 75%"></div>
-                </div>
-              </div>
-            </div>
+          <div class="card-body">
+            <h3>$300.000.000</h3>
           </div>
         </div>
-        <!-- Movimientos -->
-        <div>
-          <div class="card full">
-            <h5 class="card-header">Movimientos</h5>
+
+        <div class="container">
+          <!-- Tarjetas -->
+          <div class="card tipeCard">
+            <div class="card-header">
+              <h5>Tarjetas</h5>
+            </div>
             <div class="card-body">
-              <div class="card-seccion">
-                <h6>Nombre</h6>
-                <h6>valor</h6>
-                <h6>fecha</h6>
+              <div class="tab-bar">
+                <button class="tab-bar item" onclick="openCard('credito')">
+                  Credito
+                </button>
+                <button class="tab-bar item" onclick="openCard('debito')">
+                  Debito
+                </button>
               </div>
-              <div class="card-seccion">
-                <p>Arriendo</p>
-                <p>$1.200.000</p>
-                <p>25/01/2023</p>
+              <div id="credito" class="cardTab">
+                <div class="card-container">
+                  <p>Banco xxxxxxx</p>
+                  <p>$200.000</p>
+                </div>
+                <div class="card-container">
+                  <p>Banco xxxxxxx</p>
+                  <p>$300.000</p>
+                </div>
+              </div>
+              <div id="debito" class="cardTab" style="display: none">
+                <div class="card-container">
+                  <p>Banco xxxxxxx</p>
+                  <p>$2.000.000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bancos -->
+          <div class="card">
+            <div class="card-header">
+              <h5>Bancos</h5>
+            </div>
+            <div class="card-body">
+              <div class="card-container">
+                <p>Banco xxxxxxx</p>
+                <p>$200.000</p>
+              </div>
+              <div class="card-container">
+                <p>Banco xxxxxxx</p>
+                <p>$300.000</p>
+              </div>
+              <div class="card-container">
+                <p>Banco xxxxxxx</p>
+                <p>$2.000.000</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-    </div>
+    </main>
     <footer>© Copyright 2023, All Rights Reserved</footer>
+    <!-- Script -->
+    <script>
+      function openCard(cardName) {
+        var i;
+        var x = document.getElementsByClassName("cardTab");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        document.getElementById(cardName).style.display = "block";
+      }
+    </script>
   </body>
 </html>
