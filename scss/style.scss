@@ -68,6 +68,15 @@ section{
         padding: 3px 8px;
     }
 }
+/******** Notificaciones ********/
+.notifications-item{
+    display: flex;
+}
+.notifications-item img{
+    width: 57px;
+    height: 57px;
+    margin: 5px;
+}
 /******** Tarjetas ********/
 h1,h4{
     color: #563A87;
@@ -329,6 +338,10 @@ label{
     border: none;
     margin: auto;
     border-radius: 7px;
+  }
+  .button:hover{
+    color: #563A87;
+    background-color: #F3DFF7;
   }
   .aling-right{
     text-align: right;
