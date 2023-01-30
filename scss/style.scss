@@ -225,6 +225,118 @@ label{
 .contact-title{
     font-weight: 500;
 }
+/********* Animation *******/
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    margin: 17px auto;
+    box-sizing: border-box;
+    border: 3px white solid;
+    border-radius: 17%;
+    overflow: hidden;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+    img { 
+        width: 100%; 
+        height: auto; 
+      }
+  }
+.user-name{
+    margin-bottom: 50px;
+  }
+/********* Invertir *******/
+.steps{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  .step-button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: grey;
+    transition: .4s;
+  }
+  .step-button[aria-expanded="true"]{
+    width: 40px;
+    height: 40px;
+    background-color: #563A87;
+    color: #F3DFF7;
+  }
+  .done{
+    background-color: #563A87;
+    color: #F3DFF7;
+  }
+  .step-item{
+    z-index: 10;
+    text-align: center;
+  }
+  #progress{
+    -webkit-appearance: none;
+    position: absolute;
+    width: 95%;
+    z-index: 5;
+    height: 10px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+  #progress::-webkit-progress-value{
+    background-color: #563A87;
+    transition: .5s ease;
+  }
+  #progress::-webkit-progress-bar{
+    background-color: grey;
+  }
+  .accordion-body{
+    padding: 50px;
+    width: 635px;
+    margin: 0 auto;
+  }
+  .accordion-item{
+    border: none;
+    margin-bottom: 40px;
+  }
+  input[type="radio"]{
+    margin-right: 6px;
+  }
+  .space-input{
+    display: flex;
+    justify-content: space-around;
+  }
+  .button{
+    background-color: #563A87;
+    width: 150px;
+    color: #F3DFF7;
+    border: none;
+    margin: auto;
+    border-radius: 7px;
+  }
+  .aling-right{
+    text-align: right;
+  }
+  .content-button-accordion{
+    display: flex;
+    justify-content: center;
+  }
 /********* Footer *******/
 footer {
     position: fixed;
