@@ -20,149 +20,169 @@
     <title>Home</title>
   </head>
   <body>
-    <!-- Header -->
-    <header>
-      <div class="polar">
-        <h2>POLAR</h2>
+    <!-- Menu -->
+    <aside
+      class="navbar navbar-expand d-flex flex-column align-item-start active-nav"
+      id="sidebar"
+    >
+      <div class="logo">
+        <img src="assets/oso.png" alt="Logo POLAR" width="30%" />
       </div>
-      <div class="bar">
-        <div class="search">
-          <input type="search" placeholder="Buscar" />
-          <div class="icon-search">
-            <button><i class="fas fa-search"></i></button>
-          </div>
-        </div>
-        <div class="social-media">
-          <ul>
-            <li><i class="fa-brands fa-facebook"></i></li>
-            <li><i class="fa-brands fa-instagram"></i></li>
-            <li><i class="fa-brands fa-linkedin"></i></li>
-            <li><i class="fa-brands fa-twitter"></i></li>
-            <li><i class="fa-brands fa-tiktok"></i></li>
+      <div class="user-name">
+        <h5>Daniela Estrada</h5>
+      </div>
+      <div class="nav-bar">
+        <nav>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Inicio</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="pages/card.html"
+              >
+                <i class="fa-regular fa-credit-card"></i>
+                <span>Tarjetas</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/spend.html">
+                <i class="fa-solid fa-money-bill-trend-up"></i>
+                <span>Gastos</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/statistics.html">
+                <i class="fa-solid fa-chart-pie"></i>
+                <span>Estadisticas</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/invest.html">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Invertir</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/contact.html">
+                <i class="fa-regular fa-envelope"></i>
+                <span>Contacto</span>
+              </a>
+            </li>
           </ul>
-        </div>
-        <div class="icon">
-          <!-- Notificaciones -->
-          <button
-            class="btn btn-primary"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasRight"
-            aria-controls="offcanvasRight"
-          >
-            <i class="fa-solid fa-bell"></i>
-          </button>
-
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasRight"
-            aria-labelledby="offcanvasRightLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasRightLabel">
-                Notificaciones
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
+        </nav>
+      </div>
+    </aside>
+    <!-- Pagina -->
+    <section class="p-3 my-container active-cont">
+      <section class="content-page">
+        <!-- Header -->
+        <headwer>
+          <div class="d-flex">
+            <div class="my-auto mx-2 icon">
+              <button id="menu-btn"><i class="fa-solid fa-bars"></i></button>
             </div>
-            <div class="offcanvas-body">
-              <div class="notifications-item">
-                <img src="assets/oso.png" alt="img" />
-                <div class="text">
-                  <h4>Polar</h4>
-                  <p>
-                    Este viernes 4 de febrero se hará mantenimiento al sitio a
-                    partir de las 12:00am hasta 3:00am
-                  </p>
-                </div>
+            <div class="my-auto mx-2 search">
+              <input type="search" placeholder="Buscar" />
+              <div class="icon-search">
+                <button><i class="fas fa-search"></i></button>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </header>
+          <div class="d-flex">
+            <div class="my-auto mx-2 icon">
+              <!-- Notificaciones -->
+              <button
+                class="btn btn-primary"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+              >
+                <i class="fa-solid fa-bell"></i>
+              </button>
 
-    <!-- Menu -->
-    <div class="contenedor">
-      <aside>
-        <div class="logo">
-          <img src="assets/oso.png" alt="Logo POLAR" width="30%" />
-        </div>
-        <div class="user-name">
-          <h5>Daniela Estrada</h5>
-        </div>
-        <div class="nav-bar">
-          <nav>
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">
-                  <i class="fa-solid fa-house"></i>
-                  <span>Inicio</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="pages/card.html"
-                >
-                  <i class="fa-regular fa-credit-card"></i>
-                  <span>Tarjetas</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pages/spend.html">
-                  <i class="fa-solid fa-money-bill-trend-up"></i>
-                  <span>Gastos</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pages/statistics.html">
-                  <i class="fa-solid fa-chart-pie"></i>
-                  <span>Estadisticas</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pages/invest.html">
-                  <i class="fa-solid fa-chart-line"></i>
-                  <span>Invertir</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pages/contact.html">
-                  <i class="fa-regular fa-envelope"></i>
-                  <span>Contacto</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </aside>
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                    Notificaciones
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div class="notifications-item">
+                    <img src="assets/oso.png" alt="img" />
+                    <div class="text">
+                      <h4>Polar</h4>
+                      <p>
+                        Este viernes 4 de febrero se hará mantenimiento al sitio
+                        a partir de las 12:00am hasta 3:00am
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex p-2 bienvenida">
+              <img src="assets/oso.png" alt="" />
+              <p>¡Bienvenida de nuevo, Daniela!</p>
+            </div>
+          </div>
+        </headwer>
+        <hr />
+        <!-- Dashboard -->
 
-      <!-- Dashboard -->
-      <section>
         <div class="section-title">
           <h1>Inicio</h1>
         </div>
         <!-- Disponible-->
         <div class="row">
-          <div class="col-8">
-            <div class="card full">
-              <h5 class="card-header">Disponible</h5>
-              <div class="card-body">
-                <h2 class="card-title text-muted">$3.000.000</h2>
+          <div class="col-lg-6 col-sm-12">
+            <div class="card anuncio">
+              <div class="content-saldo">
+                <h5>Disponible</h5>
+                <h2>$3.000.000</h2>
+              </div>
+              <div>
+                <img src="assets/huella-canina.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <div class="card full-anuncio">
+              <div class="card-body-anuncio">
+                <div>
+                  <h5>¿Quieres aprender a invertir desde cero?</h5>
+                  <p>
+                    La forma mas sencilla de invertir en los mercados
+                    financieros, <b> ¡Polar te enseña como hacerlo!</b>
+                  </p>
+                </div>
+                <div class="cont-img-anuncio">
+                  <img src="assets/bolsa-de-dinero.png" alt="" />
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         <div class="row">
-          <div class="col">
+          <div class="col-lg-4 col-sm-12">
             <!-- Topes-->
             <div class="card full">
               <h5 class="card-header">Topes</h5>
@@ -242,7 +262,16 @@
           </div>
         </div>
       </section>
-    </div>
+    </section>
     <footer>© Copyright 2023, All Rights Reserved</footer>
+    <script>
+      var menu_btn = document.querySelector("#menu-btn");
+      var sidebar = document.querySelector("#sidebar");
+      var container = document.querySelector(".my-container");
+      menu_btn.addEventListener("click", () => {
+        sidebar.classList.toggle("active-nav");
+        container.classList.toggle("active-cont");
+      });
+    </script>
   </body>
 </html>

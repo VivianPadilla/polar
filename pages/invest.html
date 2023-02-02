@@ -22,128 +22,129 @@
   </head>
 
   <body>
-    <!-- Header -->
-    <header>
-      <div class="polar">
-        <h2>POLAR</h2>
+    <!-- left -->
+    <aside
+      class="navbar navbar-expand d-flex flex-column align-item-start active-nav"
+      id="sidebar"
+    >
+      <div class="logo">
+        <img src="../assets/oso.png" alt="Logo POLAR" width="30%" />
       </div>
-      <div class="bar">
-        <div class="search">
-          <input type="search" placeholder="Buscar" />
-          <div class="icon-search">
-            <button><i class="fas fa-search"></i></button>
-          </div>
-        </div>
-        <div class="social-media">
-          <ul>
-            <li><i class="fa-brands fa-facebook"></i></li>
-            <li><i class="fa-brands fa-instagram"></i></li>
-            <li><i class="fa-brands fa-linkedin"></i></li>
-            <li><i class="fa-brands fa-twitter"></i></li>
-            <li><i class="fa-brands fa-tiktok"></i></li>
+      <div class="user-name">
+        <h5>Daniela Estrada</h5>
+      </div>
+      <div class="nav-bar">
+        <nav>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Inicio</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="card.html">
+                <i class="fa-regular fa-credit-card"></i>
+                <span>Tarjetas</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="spend.html">
+                <i class="fa-solid fa-money-bill-trend-up"></i>
+                <span>Gastos</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="statistics.html">
+                <i class="fa-solid fa-chart-pie"></i>
+                <span>Estadisticas</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="invest.html">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Invertir</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">
+                <i class="fa-regular fa-envelope"></i>
+                <span>Contacto</span>
+              </a>
+            </li>
           </ul>
-        </div>
-        <div class="icon">
-          <!-- Notificaciones -->
-          <button
-            class="btn btn-primary"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasRight"
-            aria-controls="offcanvasRight"
-          >
-            <i class="fa-solid fa-bell"></i>
-          </button>
+        </nav>
+      </div>
+    </aside>
 
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasRight"
-            aria-labelledby="offcanvasRightLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasRightLabel">
-                Notificaciones
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
+    <!-- Pagina -->
+    <section class="p-3 my-container active-cont">
+      <section class="content-page">
+        <!-- Header -->
+        <header>
+          <div class="d-flex">
+            <div class="my-auto mx-2 icon">
+              <button id="menu-btn"><i class="fa-solid fa-bars"></i></button>
             </div>
-            <div class="offcanvas-body">
-              <div class="notifications-item">
-                <img src="../assets/oso.png" alt="img" />
-                <div class="text">
-                  <h4>Polar</h4>
-                  <p>
-                    Este viernes 4 de febrero se hará mantenimiento al sitio a
-                    partir de las 12:00am hasta 3:00am
-                  </p>
-                </div>
+            <div class="my-auto mx-2 search">
+              <input type="search" placeholder="Buscar" />
+              <div class="icon-search">
+                <button><i class="fas fa-search"></i></button>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </header>
+          <div class="d-flex">
+            <div class="my-auto mx-2 icon">
+              <!-- Notificaciones -->
+              <button
+                class="btn btn-primary"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+              >
+                <i class="fa-solid fa-bell"></i>
+              </button>
 
-    <div class="contenedor">
-      <!-- left -->
-      <aside>
-        <div class="logo">
-          <img src="../assets/oso.png" alt="Logo POLAR" width="30%" />
-        </div>
-        <div class="user-name">
-          <h5>Daniela Estrada</h5>
-        </div>
-        <div class="nav-bar">
-          <nav>
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html">
-                  <i class="fa-solid fa-house"></i>
-                  <span>Inicio</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="card.html">
-                  <i class="fa-regular fa-credit-card"></i>
-                  <span>Tarjetas</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="spend.html">
-                  <i class="fa-solid fa-money-bill-trend-up"></i>
-                  <span>Gastos</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="statistics.html">
-                  <i class="fa-solid fa-chart-pie"></i>
-                  <span>Estadisticas</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="invest.html">
-                  <i class="fa-solid fa-chart-line"></i>
-                  <span>Invertir</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">
-                  <i class="fa-regular fa-envelope"></i>
-                  <span>Contacto</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </aside>
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                    Notificaciones
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div class="notifications-item">
+                    <img src="../assets/oso.png" alt="img" />
+                    <div class="text">
+                      <h4>Polar</h4>
+                      <p>
+                        Este viernes 4 de febrero se hará mantenimiento al sitio
+                        a partir de las 12:00am hasta 3:00am
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex p-2 bienvenida">
+              <img src="../assets/oso.png" alt="" />
+              <p>¡Bienvenida de nuevo, Daniela!</p>
+            </div>
+          </div>
+        </header>
+        <hr />
 
-      <!-- right -->
-      <section>
         <div class="section-title">
           <h1>Invertir</h1>
         </div>
@@ -191,7 +192,7 @@
                 <div class="step-title">Confirmación</div>
               </div>
             </div>
-            <div class="accordion-item ">
+            <div class="accordion-item">
               <div id="headingOne"></div>
               <div
                 id="collapseOne"
@@ -203,16 +204,23 @@
                   <div class="accordion-item">
                     <h4>Producto origen</h4>
                     <p>Seleccione el producto origen</p>
-                    <input type="text" placeholder="123-4567-89">
+                    <input type="text" placeholder="123-4567-89" />
                   </div>
                   <div class="accordion-item">
                     <h4>Frecuencia de pago de intereses</h4>
                     <div class="space-input">
-                      <div><input type="radio" name="mensual" id="">Mensual</div>
-                      <div><input type="radio" name="vencimiento" id=""> Al vencimiento<br></div>
+                      <div>
+                        <input type="radio" name="mensual" id="" />Mensual
+                      </div>
+                      <div>
+                        <input type="radio" name="vencimiento" id="" /> Al
+                        vencimiento<br />
+                      </div>
                     </div>
                   </div>
-                  <div class="content-button-accordion"><button class="button accordion-next">Siguiente</button></div>
+                  <div class="content-button-accordion">
+                    <button class="button accordion-next">Siguiente</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -229,13 +237,13 @@
                   <div class="accordion-item">
                     <h4>Valor a invertir</h4>
                     <p>Ingresa el valor a invertir</p>
-                    <input type="text">
-                    <p>Minimo $500.000 </p>
+                    <input type="text" />
+                    <p>Minimo $500.000</p>
                   </div>
                   <div class="accordion-item">
                     <h4>Plazo de la inversión</h4>
                     <p>Ingresa el plazo</p>
-                    <input type="text">
+                    <input type="text" />
                     <p>Un valor entre 30 - 1799 días</p>
                   </div>
                   <div class="content-button-accordion">
@@ -256,51 +264,54 @@
               >
                 <div class="accordion-body">
                   <div class="accordion-item">
-                  <table>
-                    <tr>
-                      <td class="aling-right">Producto origen:</td>
-                      <td>Cuenta de ahorros 123-4567-89</td>
-                    </tr>
-                    <tr>
-                      <td class="aling-right">Plazo de inversion:</td>
-                      <td>60 días</td>
-                    </tr>
-                    <tr>
-                      <td class="aling-right">Fecha de pago de intereses:</td>
-                      <td>Al vencimiento</td>
-                    </tr>
-                    <tr>
-                      <td class="aling-right">Valor de la inversion:</td>
-                      <td>$2.500.000</td>
-                    </tr>
-                    <tr>
-                      <td class="aling-right">Intereses antes de retefuente:</td>
-                      <td>1,694,00</td>
-                    </tr>
-                    <tr>
-                      <td class="aling-right">Tasa efectiva anual:</td>
-                      <td>2.05%</td>
-                    </tr>
-                    <tr>
-                      <td class="aling-right">Tasa nominal:</td>
-                      <td>2.033%</td>
-                    </tr>
-                    <tr>
-                      <td class="aling-right">Costo:</td>
-                      <td>$0.0</td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="content-button-accordion">
-                  <button class="button accordion-back">Atras</button>
-                  <button class="button accordion-next">Siguiente</button>
-                </div>
+                    <table>
+                      <tr>
+                        <td class="aling-right">Producto origen:</td>
+                        <td>Cuenta de ahorros 123-4567-89</td>
+                      </tr>
+                      <tr>
+                        <td class="aling-right">Plazo de inversion:</td>
+                        <td>60 días</td>
+                      </tr>
+                      <tr>
+                        <td class="aling-right">Fecha de pago de intereses:</td>
+                        <td>Al vencimiento</td>
+                      </tr>
+                      <tr>
+                        <td class="aling-right">Valor de la inversion:</td>
+                        <td>$2.500.000</td>
+                      </tr>
+                      <tr>
+                        <td class="aling-right">
+                          Intereses antes de retefuente:
+                        </td>
+                        <td>1,694,00</td>
+                      </tr>
+                      <tr>
+                        <td class="aling-right">Tasa efectiva anual:</td>
+                        <td>2.05%</td>
+                      </tr>
+                      <tr>
+                        <td class="aling-right">Tasa nominal:</td>
+                        <td>2.033%</td>
+                      </tr>
+                      <tr>
+                        <td class="aling-right">Costo:</td>
+                        <td>$0.0</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="content-button-accordion">
+                    <button class="button accordion-back">Atras</button>
+                    <button class="button accordion-next">Siguiente</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-    </div>
+      </section>
+    </section>
     <footer>© Copyright 2023, All Rights Reserved</footer>
     <script>
       const stepButtons = document.querySelectorAll(".step-button");
@@ -322,6 +333,23 @@
             }
           });
         });
+      });
+
+      function openCard(cardName) {
+        var i;
+        var x = document.getElementsByClassName("cardTab");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        document.getElementById(cardName).style.display = "block";
+      }
+
+      var menu_btn = document.querySelector("#menu-btn");
+      var sidebar = document.querySelector("#sidebar");
+      var container = document.querySelector(".my-container");
+      menu_btn.addEventListener("click", () => {
+        sidebar.classList.toggle("active-nav");
+        container.classList.toggle("active-cont");
       });
     </script>
   </body>
