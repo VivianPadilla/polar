@@ -273,8 +273,10 @@ th, td {
     padding: 10px;
   }
 /******** Estadisticas ********/
-canvas{
-    max-width: 100%;
+#myChart{
+  max-height: 300px;
+  max-width: 300px;
+  margin-left: 7%;
 }
 /******** Contact ********/
 .contact-info{
